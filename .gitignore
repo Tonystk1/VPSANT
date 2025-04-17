@@ -1,0 +1,20 @@
+# Arquivos de ambiente virtual
+venv/
+.env/
+
+# Arquivos de IDE
+.idea/
+.vscode/
+__pycache__/
+
+# Arquivos temporários
+*.log
+*.pyc
+*.swp
+
+# Arquivos de sistema
+.DS_Store
+
+# Arquivos de dados sensíveis
+secrets.py
+config.ini
