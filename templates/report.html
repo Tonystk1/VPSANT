@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Relatório de Segurança</title>
+    <style>
+        .high { color: red; font-weight: bold; }
+        .medium { color: orange; }
+        .low { color: green; }
+    </style>
+</head>
+<body>
+    <h1>Relatório de Tentativas de Acesso</h1>
+    <table border="1">
+        <tr>
+            <th>IP</th>
+            <th>Tentativas</th>
+            <th>Última Tentativa</th>
+            <th>Nível de Ameaça</th>
+        </tr>
+        {% for attacker in attackers %}
+        <tr>
+            <td>{{ attacker.ip }}</td>
+            <td>{{ attacker.count }}</td>
+            <td>{{ attacker.last_attempt }}</td>
+            <td class="{{ attacker.threat_level }}">
+                {{ attacker.threat_level|upper }}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p>Gerado em: {{ now }}</p>
+</body>
+</html>

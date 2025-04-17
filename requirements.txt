@@ -1,0 +1,4 @@
+python-nmap==0.7.1
+flask==2.2.5
+jinja2==2.10.1
+pandas==1.5.3
