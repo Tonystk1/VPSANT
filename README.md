@@ -13,7 +13,7 @@ Sistema avançado para monitoramento e proteção de servidores Linux, com detec
 | **Log Analyzer** | Monitoramento contínuo de tentativas de acesso suspeitas via SSH          |
 | **Threat Scanner** | Varredura de portas e vulnerabilidades com Nmap integrado                |
 | **Auto-Hardening** | Configura automaticamente 10+ regras de segurança no servidor            |
-| **Alert System**  | Notificações em tempo real via Telegram/Email para atividades suspeitas  |
+
 
 ## 🛠️ Tecnologias Utilizadas
 - **Python 3.8+** (Análise de logs e automação)
